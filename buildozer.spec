@@ -1,4 +1,4 @@
-﻿[app]
+[app]
 # (str) Título do seu aplicativo
 title = DataEquity Collector
 
