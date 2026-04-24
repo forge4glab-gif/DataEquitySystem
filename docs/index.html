@@ -2,80 +2,27 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>DataEquity Store - Download Oficial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataEquity System | Perícia e Auditoria</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f172a; color: white; text-align: center; padding: 40px; }
-        .app-card { background: #1e293b; max-width: 450px; margin: auto; border-radius: 20px; padding: 30px; border: 1px solid #334155; }
-        .app-icon { width: 80px; height: 80px; background: #38bdf8; border-radius: 18px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: #0f172a; }
-        .badge { background: #334155; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; color: #38bdf8; }
-        .install-btn { display: block; background: #34d399; color: #064e3b; padding: 18px; text-decoration: none; border-radius: 12px; font-weight: bold; margin-top: 30px; font-size: 1.2rem; }
-        .info { margin-top: 20px; font-size: 0.9rem; color: #94a3b8; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0a0a0a; color: white; text-align: center; padding: 50px; }
+        .container { border: 1px solid #333; padding: 40px; border-radius: 15px; background: #111; display: inline-block; }
+        .btn { background-color: #007bff; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 20px; transition: 0.3s; }
+        .btn:hover { background-color: #0056b3; }
+        .footer { margin-top: 30px; font-size: 12px; color: #666; }
     </style>
 </head>
 <body>
-    <div class="app-card">
-        <div class="app-icon">DE</div>
-        <h1>DataEquity Analisador</h1>
-        <span class="badge">Versão 2.0.4 - 2026</span>
-        <p class="info">Auditoria Pericial e Monitoramento de Dados Blockchain.</p>
+    <div class="container">
+        <h1>DataEquity System v3.0</h1>
+        <p>Módulo Analisador de Auditoria C7 e Shadow Guard.</p>
+        <p><strong>Número do Processo INPI:</strong> 512026001509-0</p>
         
-        <div style="text-align: left; margin: 20px 0; border-top: 1px solid #334155; padding-top: 20px;">
-            <p>⭐ 5.0 (Auditoria Independente)</p>
-            <p>📦 Tamanho: 14.2 MB</p>
-            <p>🛡️ Segurança: Verificado por SHA-256</p>
-        </div>
-
-        <a href="DataEquity_Analisador_v2.0.4.apk" class="install-btn">INSTALAR AGORA</a>
-        <p style="font-size: 0.7rem; color: #64748b; margin-top: 15px;">Desenvolvido por Victor Serranoni (INPI 512026001509-0)</p>
-    </div>
-    <div class="cta-box" style="margin-top: 40px; border-color: var(--primary);">
-        <h3>Painel do Perito</h3>
-        <p style="font-size: 0.9rem; color: #94a3b8;">Consulte o status da sua estação de monitoramento.</p>
-        <input type="text" id="checkToken" placeholder="Digite seu Token (USER-...)">
-        <button class="btn-activate" style="background: var(--primary); color: white;" onclick="consultarStatus()">VERIFICAR STATUS</button>
+        <a href="DataEquity_Analisador_v2.0.4.apk" class="btn">INSTALAR AGORA (v2.0.4)</a>
         
-        <div id="statusResult" style="display:none; margin-top: 20px; padding: 15px; border-radius: 8px; background: #0f172a;">
-            <p id="statusMsg" style="font-weight: bold;"></p>
-            <p id="saldoMsg" style="color: var(--accent); font-size: 1.2rem;"></p>
+        <div class="footer">
+            © 2026 Victor Roberto Serranoni da Costa. Todos os direitos reservados.
         </div>
     </div>
-
-    <script>
-        async function consultarStatus() {
-            const token = document.getElementById('checkToken').value;
-            if(!token) return;
-            
-            const resultDiv = document.getElementById('statusResult');
-            const statusMsg = document.getElementById('statusMsg');
-            const saldoMsg = document.getElementById('saldoMsg');
-
-            try {
-                // Chamada para sua Lambda GetBalance
-                const response = await fetch('https://sua-api-gateway.aws/prod/balance?token=' + token);
-                const data = await response.json();
-
-                resultDiv.style.display = 'block';
-                statusMsg.innerText = "Status: " + data.status;
-                statusMsg.style.color = data.status === 'Ativo' ? '#34d399' : '#f87171';
-                saldoMsg.innerText = "Créditos Periciais: R$ " + data.saldo;
-            } catch (e) {
-                alert('Token não localizado ou em processamento.');
-            }
-        }
-    </script>     <footer style="margin-top: 80px; padding: 60px 20px; border-top: 1px solid #334155; background: #0f172a; text-align: left;">
-        <div style="max-width: 800px; margin: auto;">
-            <h2 style="color: #38bdf8; font-family: serif; font-style: italic;">Manifesto da Soberania Digital</h2>
-            <p style="color: #94a3b8; font-family: serif; font-size: 1.1rem; line-height: 1.8;">
-                "O dado não é um resíduo digital; é a extensão da subjetividade humana."<br><br>
-                No <strong>DataEquity System</strong>, entendemos que a exfiltração não autorizada de dados não é apenas uma falha técnica, 
-                mas uma invasão da estrutura germinal da privacidade. Quando Big Techs capturam sua telemetria, elas tentam monetizar o seu inconsciente. <br><br>
-                Nossa missão é devolver o peso da soberania ao indivíduo. Através de perícia rigorosa e selagem em blockchain, 
-                transformamos o abuso em ativo e a vigilância em justiça. <strong>A tecnologia deve servir ao sujeito, nunca o contrário.</strong>
-            </p>
-            <p style="margin-top: 40px; font-size: 0.8rem; color: #475569;">
-                &copy; 2026 DataEquity System | Tecnologia Registrada INPI: 512026001509-0 <br>
-                Idealizado por Victor Roberto Serranoni da Costa.
-            </p>
-        </div>
-    </footer> </body>
+</body>
 </html>
