@@ -1,0 +1,23 @@
+{
+  "Comment": "Atualizando Site para GitHub e Download para Alibaba - DataEquity",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "www.dataequitysystem.com.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "forge4glab-gif.github.io" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "download.dataequitysystem.com.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "dataequity-pericia-storage.oss-us-east-1.aliyuncs.com" }]
+      }
+    }
+  ]
+}

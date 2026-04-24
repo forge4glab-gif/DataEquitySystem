@@ -1,0 +1,14 @@
+﻿==========================================================
+        DATAEQUITY SYSTEM - EXTRATO DE SOBERANIA
+==========================================================
+DATA: 22/04/2026 14:07
+PERITO: Victor Serranoni
+ID MESTRE: MASTER-0A999292
+DISPOSITIVO: SAMSUNG-S25FE-PRO
+----------------------------------------------------------
+DETALHAMENTO DE INFRAÇÕES (Big Techs):
+- DE-20260422_11-17-38 | Telemetria Alphabet | R$ 150,00
+- DE-20260422_14-05-12 | Exfiltração Cookies | R$ 150,00
+----------------------------------------------------------
+TOTAL ACUMULADO A LIQUIDAR: R$ 300,00
+==========================================================
